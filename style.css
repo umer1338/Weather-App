@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+
+body{
+    background-color: #0F0F0F;
+}
+
+.container{
+    margin-top: 100px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.card{
+    padding: 20px;
+    width: 30%;
+    height:auto;
+    background-color: #7fbbff;
+    background: linear-gradient(to left, #004b7c, rgb(0, 125, 129));
+    border-radius: 20px;
+}
+
+.search{
+    width: 100%;
+    /* background-color: white; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#searchBtn>img{
+    width: 20px;
+}
+
+.search>input{
+    width: 80%;
+    border: none;
+    outline: none;
+    padding: 10px 15px;
+    font-size: medium;
+    border-radius: 50px;
+}
+
+#searchBtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+    padding: 10px 15px;
+    border-radius: 50px;
+}
+
+.mainheading{
+    margin-bottom: 50px;
+    color: white;
+    font-size: 50px;
+}
+
+.weather-icon{
+    width: 160px;
+}
+
+.temp,.city{
+    font-size: xx-large;
+    color: white;
+}
+
+.col{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+}
+
+.col>img{
+    width: 50px;
+}
+
+.col>div{
+    margin-left: 10px;
+}
+
+.details{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.wind,.humidity{
+    color: white;
+    font-size: 30px;
+}
+
+#icons>i{
+    font-size: 100px;
+    color: rgb(216, 171, 22);
+}
+
+#icons{
+    margin-top: 40px;
+}
+
+@media screen and (max-width: 675px) {
+    .details{
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        font-size: small;
+    }
+
+    .card{
+        width: 70%;
+        padding: 10px;
+    }
+
+    .mainheading{
+        font-size: 30px;
+    }
+
+}
